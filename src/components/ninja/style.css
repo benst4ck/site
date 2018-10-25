@@ -1,0 +1,74 @@
+
+
+
+.ninja {  /* 忍者头部 */
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  z-index: 1;  /* z-index仅能用在使用了position属性的元素上 默认值为0 值越大 元素置于越上层 */
+  transform: translateX(-50%);
+  box-sizing: border-box;  /* 通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
+  margin: 0;
+  padding: 80px 30px;
+  border-radius: 50%;
+  background: #181a1b;
+  width: 200px;
+  height: 200px; }
+  .ninja::before {  /* 忍者眼部上方区域 */
+    position: absolute;  /* 相对父元素(.ninja)定位 */
+    top: 65px;
+    left: 10px;
+    z-index: 1;
+    display: block;
+    background: #181a1b;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    width: 180px;
+    height: 20px;
+    content: ''; }
+  .ninja::after {  /* 忍者身体 */
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    background-color: #181a1b;
+    width: 40%;
+    height: calc(100px + 10%);
+    content: ''; }
+
+  .ninja span {  /* 忍者眼部 span元素就是.ninja类元素的内容 内容的高宽前面已通过box-sizing属性得到 这里宽不变 高为其80% */
+    position: relative;
+    display: block;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: #ffe39f;
+    height: 80%; }
+    .ninja span::before, .ninja span::after {
+      position: absolute;
+      top: 12px;
+      display: block;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background: #181a1b;
+      content: ''; }
+    .ninja span::before {
+      left: 25%; }
+    .ninja span::after {
+      right: 25%; }
+
+.hand {
+  position: relative;
+  left: -40px;
+  bottom: -100px;
+  width: 220px;
+  height: 30px;
+  border-radius: 10px;
+  background: #181a1b;
+  color: #fff;
+}
+
+
+  
+

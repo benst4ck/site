@@ -1,0 +1,118 @@
+/*
+
+Railscasts-like style (c) Visoft, Inc. (Damien White)
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;  padding: 10px;
+}
+
+
+
+.hljs-comment,
+.hljs-quote {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-style: italic;
+  margin: 3px;
+}
+
+.hljs-keyword {
+  font-weight: bold;
+}
+
+.hljs-string {
+  color: #000;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-variable,
+.hljs-template-variable {
+  color: #1f96f7;
+}
+
+.hljs-regexp,
+.hljs-subst {
+}
+
+.hljs-type {
+  color: #da4939;
+}
+
+.hljs-attr {
+  color: #000;
+}
+
+.hljs-params {
+  
+}
+
+.hljs-attribute {
+  color: #ffd900;
+}
+
+.hljs-meta {
+  color: #9b859d;
+}
+
+
+
+.hljs-addition {
+  background-color: #144212;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-deletion {
+  background-color: #600;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+.hljs-selector-tag {
+  color: #2e9df7;
+}
+
+.hljs-selector-class,
+.hljs-selector-id {
+  color: #ff3322;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.hljs-tag {
+  color: #000;
+}
+.hljs-name {
+  color: #ed1b2e;
+  font-weight: bold;
+}
+
+.hljs-selector-pseudo {
+  color: #2e9df7;
+}

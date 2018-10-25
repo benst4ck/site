@@ -1,0 +1,57 @@
+nav a {
+	position: relative;
+	display: block;
+	margin: 16px 25px;
+	outline: none;
+	text-decoration: none; /* a元素默认的下划线样式被去除 */
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 1.25em;
+}
+
+.cl-effect-11 a {
+	padding: 6px 0;
+	color: #2f68a2;
+} 
+
+.cl-effect-11 a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 6px 0;
+	max-width: 0;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+}
+
+.cl-effect-11 a:hover::before,
+.cl-effect-11 a:focus::before {
+	max-width: 100%;
+}
+#nav {
+	position: absolute;
+	top: 700px;
+	left: 5%;
+}
+
+.badge {
+	color: #fff;
+	font-size: 15px;
+	padding: 0px 3px;
+	margin-left: 4px; 
+}
+
+.menu-hidden {
+  transform: translateX(-250px);
+  transition: transform 0.5s ease-in;
+}
+
+.menu-active {
+  transform: translateX(40px);
+  transition: transform 0.5s ease-out;
+}

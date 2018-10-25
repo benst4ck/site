@@ -1,0 +1,21 @@
+#list {
+	position: absolute;
+	top: 700px;
+	left: 30%;
+	padding: 40px;
+	border-left: 1px solid #a3a3a3; 
+}
+
+#list li {
+	list-style:none;
+	margin: 31px;
+}
+
+#list li a {
+	margin: 30px;
+	padding: 4px 8px;
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	border-radius: 5px;
+}
